@@ -1,0 +1,16 @@
+msgid "Add @type_singular"
+msgstr "Ajouter un @type_singular"
+
+msgid "You can not select more than 1 entity."
+msgstr "Vous ne pouvez pas sélectionner plus d'une entité."
+
+msgid "You can not select more than 1 entity."
+msgid_plural "You can not select more than @count entities."
+msgstr[0] "Vous ne pouvez pas sélectionner plus d'une entité."
+msgstr[1] "Vous ne pouvez pas sélectionner plusiers entités."
+
+// Translate with context.
+// AddressField::ORGANIZATION => t('Company', [], ['context' => 'Address label']),
+msgctxt "Address label"
+msgid "Company"
+msgstr "Lieu (Exemple : Cité des sciences)"
