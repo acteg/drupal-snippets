@@ -1,6 +1,6 @@
 <?php
 
-
+// File validators
 $validators = [
       'file_validate_extensions' => ['pdf txt'],
       'file_validate_size' => [5242880], // 5 mo
@@ -19,6 +19,7 @@ $form['file'] = [
 '#attributes' => ['class' => ['file-import-input']],
 ];
 
-$form['keys']['#attributes']['placeholder'] = 'Search some things';
+// Add new validation and submit methode.
+// If on form you have actions with submit boutton, this act after submit of global form.
 $form['actions']['submit']['#validate'][] = array($this, 'validateContactForm');
 $form['actions']['submit']['#submit'][] = array($this, 'submitContactForm');
