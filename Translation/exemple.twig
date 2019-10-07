@@ -1,0 +1,15 @@
+{{ 'Hello World.'|trans }}
+{{ 'Hello World.'|t }}
+
+{% set count = 5 %}
+{% trans %}
+  The quick brown fox jumped 1 time.
+{% plural count %}
+  The quick brown fox jumped {{ count }} times.
+{% endtrans %}
+
+Finally, the string context is also possible like so:
+
+{% trans with {'context': 'The verb "to book"'} %}
+  Book
+{% endtrans %}
