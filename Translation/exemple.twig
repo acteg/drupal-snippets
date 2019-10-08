@@ -10,6 +10,8 @@
 
 Finally, the string context is also possible like so:
 
+{{ "Text to translate"|t({}, {'context' : 'Context name'}) }}
+Or 
 {% trans with {'context': 'The verb "to book"'} %}
   Book
 {% endtrans %}
